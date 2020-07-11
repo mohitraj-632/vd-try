@@ -40,5 +40,5 @@ headers = {
 
 r = requests.get(url,headers=headers).json()
 print(r)
-game = x['name']
+game = r['name']
 print(game)
