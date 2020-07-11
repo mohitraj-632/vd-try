@@ -30,7 +30,7 @@ headers = {
 	'x-platform':'5',
 	'device-id':'30193B7938EA504EB77D3B67c8352FE431286AE9',
 	'x-app-language':'1',
-	'Ipn:':'com.vedantu.app',
+	'lpn:':'com.vedantu.app',
 	'client-id':'CagkWJoLLYEY2FK9Ve2XqvekDkDDIITJnYkhpmfT',
 	'client-secret':'jbwPDmTe6eHSFnf7qSMOrQdOqZ1X05yoLPCw5jyGeXmRmmSi1hwRIYX7uFTuXdSmWcjfjrujFTnZM6UhXBUE7SGEg3zHgtH2nLk3Pxg6tAhD1Cyzlt590Rtl8T5GFJ0s',
 	'authorization':'Bearer eyJhbGciOiJIUzl1NilslnR5cCl6lkpXVCJ9.eyJ1c2VybmFtZSI6lk1vaGloiFJhailsinVzZxJfdWIkljoiNDEWMjQOMTk30DY4MzgxNSIslmF2YXRhcil6lilslmV4cCI6MTU5NDQ3NTgxMSwiaWFOljoxNTkONDcOMDExLCJfX2FwcCI6InZIZGFudHUifQ.Vn02pu5DyWbRIS32mElW_brOEwsNMTqKejqWP_OAUXY',
