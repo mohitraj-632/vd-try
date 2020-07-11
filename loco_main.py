@@ -38,5 +38,7 @@ headers = {
 	'user-agent':'okhttp/3.14.4'
 }
 
-r = requests.get(url,headers=f"Bearer {bearer}").json()
+r = requests.get(url,headers=headers).json()
 print(r)
+game = x['name']
+print(game)
