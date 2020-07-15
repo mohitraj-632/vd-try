@@ -32,5 +32,4 @@ headers = {
 	'user-agent':'okhttp/3.14.4'
 }
 r =requests.get(url,headers=headers)
-rdata = r.text
-print(rdata)
+print(r)
