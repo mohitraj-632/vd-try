@@ -13,8 +13,7 @@ import base64
 from websocket import create_connection	
 from bs4 import BeautifulSoup
 
-bearer = "eyJhbGciOiJIUzl1NilslnR5cCl6lkpXVCJ9.eyJ1c2VybmFtZSI6lk1vaGloiFJhailsinVzZxJfdWIkljoiNDEWMjQOMTk30DY4MzgxNSIslmF2YXRhcil6lilslmV4cCI6MTU5NDQ3NTgxMSwiaWFOljoxNTkONDcOMDExLCJfX2FwcCI6InZIZGFudHUifQ.Vn02pu5DyWbRIS32mElW_brOEwsNMTqKejqWP_OAUXY"
-webhook_url = "https://discordapp.com/api/webhooks/731515307939856385/EWR3jDN-rcTWZipIN-VwxmcM3WM8Fc6PWsHSOHk9y-JQy1AkCBLOBcpMd5hiB9u7Nkge"
+webhook_url = "https://discordapp.com/api/webhooks/731852323185360897/mXlbfkA959ErWPE3PaRC8jTdxE0iy4b5y03B92K7XeIPI5W9hs9k_O6iRRzk0ZtcbMgZ"
 
 hook = Webhook(webhook_url)
 try:
@@ -22,22 +21,15 @@ try:
 except:
 	print("Invalid WebHook Url!")
 
-url = "https://vedantuapi.getloconow.com/v2/vendors/vedantu/v1/contest/"
-
+url = "https://lms.vedantu.com/lms/homefeed/getTodaysLiveQuizSchedule?requestSource=ANDROID&appDeviceId=c8e1c7b57f90e0d&appVersionCode=1.6.8&callingUserId=4102441978683815"
 headers = {
-	'Host':'vedantuapi.getloconow.com',
-	'x-app-version':'100015',
-	'x-platform':'5',
-	'device-id':'30193B7938EA504EB77D3B67c8352FE431286AE9',
-	'x-app-language':'1',
-	'Ipn':'com.vedantu.app',
-	'client-id':'CagkWJoLLYEY2FK9Ve2XqvekDkDDIITJnYkhpmfT',
-	'client-secret':'jbwPDmTe6eHSFnf7qSMOrQdOqZ1X05yoLPCw5jyGeXmRmmSi1hwRIYX7uFTuXdSmWcjfjrujFTnZM6UhXBUE7SGEg3zHgtH2nLk3Pxg6tAhD1Cyzlt590Rtl8T5GFJ0s',
-	'authorization':'Bearer eyJhbGciOiJIUzl1NilslnR5cCl6lkpXVCJ9.eyJ1c2VybmFtZSI6lk1vaGloiFJhailsinVzZxJfdWIkljoiNDEWMjQOMTk30DY4MzgxNSIslmF2YXRhcil6lilslmV4cCI6MTU5NDQ3NTgxMSwiaWFOljoxNTkONDcOMDExLCJfX2FwcCI6InZIZGFudHUifQ.Vn02pu5DyWbRIS32mElW_brOEwsNMTqKejqWP_OAUXY',
+	'Host':'lms.vedantu.com',
+	'accept':'application/json.text/plain,*/*',
+	'x-ved-device':'ANDROID',
+	'x-ved-token':'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3OTkxMTM5NjY1IiwiZXhwIjoxNjAwMDA5MDI0LCJpc3MiOiJ2ZWRhbnR1LmNvbSIsInNlc3Npb25EYXRhIjoie1wiZmlyc3ROYW1lXCI6XCJNb2hpdFwiLFwibGFzdE5hbWVcIjpcIlJhaiBcIixcInVzZXJJZFwiOjQxMDI0NDE5Nzg2ODM4MTUsXCJyb2xlXCI6XCJTVFVERU5UXCIsXCJjb250YWN0TnVtYmVyXCI6XCI3OTkxMTM5NjY1XCIsXCJwaG9uZUNvZGVcIjpcIjkxXCIsXCJjcmVhdGlvblRpbWVcIjoxNTk0ODE5NDM3NTc4LFwiZXhwaXJ5VGltZVwiOjE2MDAwMDkwMjQ1MTksXCJpc0VtYWlsVmVyaWZpZWRcIjpmYWxzZSxcImlzQ29udGFjdE51bWJlclZlcmlmaWVkXCI6dHJ1ZSxcImlzQ29udGFjdE51bWJlckRORFwiOmZhbHNlLFwiaXNDb250YWN0TnVtYmVyV2hpdGVsaXN0ZWRcIjpmYWxzZSxcInJlZmVycmFsQ29kZVwiOlwibW9oaTllZWNcIixcImRldmljZVwiOlwiQU5EUk9JRFwiLFwiZ3JhZGVcIjpcIjEwXCIsXCJib2FyZFwiOlwiQ0JTRVwiLFwiZXhhbVRhcmdldHNcIjpbXSxcInVzZXJJblByb2Nlc3NPZk9uYm9hcmRpbmdcIjpmYWxzZX0ifQ.GSDcGbapO4ktTItzLSA3a5TZNK_AKBM8rlCHW3fGGZckSoy0qKNz0NZEcXftlWB4iOQwmQNOduOUwj7n2Yxbyg',
 	'accept-encoding':'gzip',
+	'cookie':'X-Ved-Token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3OTkxMTM5NjY1IiwiZXhwIjoxNjAwMDA5MDI0LCJpc3MiOiJ2ZWRhbnR1LmNvbSIsInNlc3Npb25EYXRhIjoie1wiZmlyc3ROYW1lXCI6XCJNb2hpdFwiLFwibGFzdE5hbWVcIjpcIlJhaiBcIixcInVzZXJJZFwiOjQxMDI0NDE5Nzg2ODM4MTUsXCJyb2xlXCI6XCJTVFVERU5UXCIsXCJjb250YWN0TnVtYmVyXCI6XCI3OTkxMTM5NjY1XCIsXCJwaG9uZUNvZGVcIjpcIjkxXCIsXCJjcmVhdGlvblRpbWVcIjoxNTk0ODE5NDM3NTc4LFwiZXhwaXJ5VGltZVwiOjE2MDAwMDkwMjQ1MTksXCJpc0VtYWlsVmVyaWZpZWRcIjpmYWxzZSxcImlzQ29udGFjdE51bWJlclZlcmlmaWVkXCI6dHJ1ZSxcImlzQ29udGFjdE51bWJlckRORFwiOmZhbHNlLFwiaXNDb250YWN0TnVtYmVyV2hpdGVsaXN0ZWRcIjpmYWxzZSxcInJlZmVycmFsQ29kZVwiOlwibW9oaTllZWNcIixcImRldmljZVwiOlwiQU5EUk9JRFwiLFwiZ3JhZGVcIjpcIjEwXCIsXCJib2FyZFwiOlwiQ0JTRVwiLFwiZXhhbVRhcmdldHNcIjpbXSxcInVzZXJJblByb2Nlc3NPZk9uYm9hcmRpbmdcIjpmYWxzZX0ifQ.GSDcGbapO4ktTItzLSA3a5TZNK_AKBM8rlCHW3fGGZckSoy0qKNz0NZEcXftlWB4iOQwmQNOduOUwj7n2Yxbyg',
 	'user-agent':'okhttp/3.14.4'
 }
-
-r = requests.get(url,headers=headers).json()
-rdata = r.text
-print(rdata)
+r =requests.get(url,headers=headers).json()
+print(r)
